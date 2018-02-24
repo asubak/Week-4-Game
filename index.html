@@ -1,0 +1,116 @@
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crystal Collector</title>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>  
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
+</head>
+<body>
+	<div class="header">
+		<h1>Crystal Collector!</h1>
+	</div>
+	<div class="instructions">
+		<h3>How to play:</h3>
+	</br>
+	<ol>
+		<li>You will be given a random number at the start of the game.</li>
+	</br>
+		<li>There are four cyrstals below. By clicking on a crystal you will add a specific amount of points to your total score.</li>
+		</br>
+		<li>You win the game by matching your total score to the random number and you will lose the game if your total score goes above the random number.</li>
+		</br>
+		<li>The value of each crystal is hidden until you click on it and it adds to your total score. Keep track of what each crystal is worth for each game!</li>
+		</br>
+		<li>Each time the game starts, so after you win or lose, the game will change the values of each crystal to keep you on your toes.</li>
+	</ol> 
+	<h1>Number to Guess: <span id="number-to-guess"></span></h1>
+	<div id="crystals"></div>
+	<button id="try-again">Try Again</button>
+</body>
+
+</html>
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Crystal Collector</title>
+	<!-- Reset CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+	<!-- Latest compiled and minified CSS (Bootstrap) -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<!-- CSS -->
+	<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+	<div class="jumbotron text-center">
+		<h1>Crystal Collector</h1></div>
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-6 instructions">
+					<h2>Instructions</h2> 
+					<ol>
+						<strong><li>You will be given a random number at the start of the game, the score to match.</li>
+						</br>
+						<li>There are four cyrstals below. By clicking on a crystal you will add a specific amount of points to your total score.</li>
+					</br>
+					<li>You win the game by matching your total score to the "score to match" number and you will lose the game if your total score goes above the "score to match" number.</li>
+				</br>
+				<li>The value of each crystal is hidden until you click on it and it adds to your total score. Keep track of what each crystal is worth for each game!</li>
+			</br>
+			<li>Each time the game starts, so after you win or lose, the game will change the values of each crystal to keep you on your toes.</li></strong>
+		</ol> 
+	</div>
+	<div class="col-sm-6 amethyst">
+		<img src="C:\Users\asuba\Desktop\Week-4-Game\assets\images\Amethyst-300x138.jpg" class="amethyst" alt="crystal" height="300"/>
+	</div>	
+</div>
+
+<div class="row">
+	<div class="col-sm-6">
+		<h2>Score to match: <span id="scoreToMatch"></span></h2>
+	</div>
+	<div class="col-sm-6">
+		<h3>Wins: <span id="wins"></span></h3>
+		<h3 class="text-left">Losses: <span id="losses"></span></h3>
+	</div>
+</div>
+
+<div class="row text-center">
+	<div class="col-sm-3">
+		<img src="C:\Users\asuba\Desktop\Week-4-Game\assets\images\red.png" class="img-thumbnail red" alt="Red Crystal" width="150" height="150"/>
+	</div>
+	<div class="col-sm-3">
+		<img src="C:\Users\asuba\Desktop\Week-4-Game\assets\images\blue.png" class="img-thumbnail blue" alt="Blue Crystal" width="150" height="150"/>
+	</div>
+	<div class="col-sm-3">
+		<img src="C:\Users\asuba\Desktop\Week-4-Game\assets\images\yellow.png" class="img-thumbnail yellow" alt="Yellow Crystal" width="150" height="150" />
+	</div>
+	<div class="col-sm-3">
+		<img src="C:\Users\asuba\Desktop\Week-4-Game\assets\images\green.png" class="img-thumbnail green" alt="Green Crystal" width="150" height="150"/>
+	</div>
+</div>
+<br/>
+<div class="row">
+	<div class="col-sm-12">
+		<h2>Your total score is: <span id="totalScore"></span></h2>
+	</div>
+</div>
+</div>
+
+
+</body>
+<!-- JS -->
+<script src="assets/javascript/game.js"></script> 
+</html>
